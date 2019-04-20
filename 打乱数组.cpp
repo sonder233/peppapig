@@ -15,17 +15,17 @@ int main()
     }
 
     srand(time(0));
-    int j=rand()%6;   //Ëæ»úÊı
+    int j=rand()%6;
 
     int temp;
-    for(int i=0;i<6;i++){
+    for(int i=0;i<num;i++){
         temp=demo[i];
         demo[i]=demo[j];
         demo[j]=temp;
     }
 
     cout<<"The scrambled array is: ";
-    for(int k=0;k<;k++){
+    for(int k=0;k<num;k++){
         cout<<demo[k]<<" ";
     }
     return 0;
